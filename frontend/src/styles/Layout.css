@@ -1,0 +1,55 @@
+.link-header {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Add space between links */
+  background-color: transparent; /* or set to match your header */
+}
+
+.link-header {
+  margin-left: auto;
+}
+
+.link-header .nav-link {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.link-header .nav-link:hover {
+  color: #dcdcdc !important;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  margin: 0;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #198754;;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.pantrypal-brand {
+  display: flex;
+  align-items: center;
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+:root {
+  --navbar-height: 80px; 
+  --footer-height: 85px;
+}

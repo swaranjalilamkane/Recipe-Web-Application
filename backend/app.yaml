@@ -1,0 +1,6 @@
+runtime: nodejs20
+
+
+env_variables:
+  RECIPES_DB_URI: "mongodb+srv://healthyrecipes_db_user:kSBzJE4co1MUM7xh@cluster1.kibmezb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+  RECIPES_DB_NAME: "healthyrecipes"

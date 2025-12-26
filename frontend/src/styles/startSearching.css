@@ -1,0 +1,125 @@
+/* border radius */
+:root {
+  --radius: 0.2rem;
+  --clr-primary: #2e7d32;
+  /* a nice neutral green */
+  --clr-gray300: rgba(0, 0, 0, 0.15);
+  /* gray fallback */
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 20px 20px var(--clr-gray300);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: ponter;
+  transition: transform 200ms ease-in;
+  height: 100%;
+  min-height: 400px;
+}
+
+.card .recipe-img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .recipe-title {
+  padding: 0.5rem
+}
+
+.card .card-button {
+  padding: 0.75rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem auto 1.5rem;
+  border: 2px solid var(--clr-primary);
+  background-color: transparent;
+  color: var(--clr-primary);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card .hover {
+  transform: scale(1.02);
+
+}
+
+.card .card-button:hover {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.expanded-card ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 1.2rem;
+  margin: 0 auto;
+  list-style-type: disc;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-top: 1rem;
+}
+
+.expanded-card h6 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.suggestions-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+}
+
+.suggestions-popup {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  max-height: 410px;
+  overflow-y: auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.suggestions-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-popup li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestions-popup li:hover {
+  background-color: #d5efd5;
+}
+
+.heart{
+  width: 2em;
+  height: 2em;
+  filter: drop-shadow(2px 4px 6px black);
+  position: absolute;
+  /* top: 1px; */
+  right: -1px;
+}
+
+.heartFill{
+  fill: red;
+}
+
+.heartEmpty{
+  fill: white;
+}

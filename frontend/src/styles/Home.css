@@ -1,0 +1,22 @@
+
+.hero {
+  background-image: url("../../public/Images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  min-height: calc(100vh - var(--navbar-height, 65px) - var(--footer-height, 75px));
+}
+
+.hero section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}

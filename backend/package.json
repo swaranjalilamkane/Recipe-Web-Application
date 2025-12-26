@@ -1,0 +1,28 @@
+{
+  "name": "group-project-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --reporter spec --exit",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "chai": "^5.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.7.1",
+    "mongodb": "^6.18.0",
+    "serverless-http": "^4.0.0",
+    "supertest": "^7.1.4"
+  },
+  "resolutions": {
+    "bson": "^6.7.0"
+  }
+}

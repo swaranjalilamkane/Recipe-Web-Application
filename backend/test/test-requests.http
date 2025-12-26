@@ -1,0 +1,61 @@
+
+### Add new recipe (include user_id)
+POST https://cn50au1lh4.execute-api.us-east-1.amazonaws.com/api/recipes
+Content-Type: application/json
+
+{
+  "title": "Tomato recipe",
+  "ingredients": ["tomato", "basil", "garlic", "olive oil"],
+  "instructions": "Blend all ingredients and simmer for 20 minutes.",
+  "diet": "vegan",
+  "cuisine": "Italian",
+  "user_id": "689aa3c799fd70474b4c0da1",
+    "approved": false,
+    "imageURL": "https://example.com/tomato-basil-soup.jpg"
+
+}
+
+### Get all recipes
+GET http://localhost:5001/api/recipes?page=0
+Accept: application/json
+
+###
+
+### Search recipes by ingredients
+GET http://localhost:5001/api/recipes/search?ingredients=tomato,basil&page=0
+Accept: application/json
+
+
+### Get recipe by ID
+GET http://localhost:5001/api/recipes/689aa3fa99fd70474b4c0da2
+Accept: application/json
+
+
+###
+
+### Update a recipe
+PUT http://localhost:5001/api/recipes/689aa3fa99fd70474b4c0da2
+Content-Type: application/json
+
+{
+  "title": "Updated Tomato Basil Soup"
+}
+
+###
+
+### Delete a recipe
+DELETE http://localhost:5001/api/recipes/6886e004b28313d569eaaaea
+
+### Submit a rating for a recipe
+POST http://localhost:5001/api/recipes/rate
+Content-Type: application/json 
+
+{
+  "recipeId": "689aa3fa99fd70474b4c0da2",
+  "userId": "689aa3c799fd70474b4c0da1",
+  "stars": 5
+}
+
+### Get ratings for a recipe
+GET http://localhost:5001/api/recipes/ratings/689aa3fa99fd70474b4c0da2
+Accept: application/json
