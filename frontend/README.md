@@ -59,9 +59,9 @@ Created a page for admins to review recipes and the router to app.js
 
 #### Iter2
 - Updated the `SearchRecipesPage`. to show recipes displayed in responsive Bootstrap cards using `GET request` when filters are submitted and search button is clicked
-![Filtered recipe results](public/Images/filtered-recipes.png)
+
    - Clicking `View Recipe` expands the card to show the ingredients and instructions
-![View recipe feature](public/Images/view-recipe.png)
+
 - Updated the GET /api/recipes/search endpoint to:
    - Parse and filter by ingredients, diet, and cuisine (using MongoDB queries)
    - Return only recipes matching all selected filters
